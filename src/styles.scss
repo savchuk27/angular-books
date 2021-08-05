@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+/*new styles*/
+.grid-table
+{
+	display:table;
+}
+.thead
+{
+	display:table-header-group;
+	font-weight:bold;
+	border-bottom: 1px solid black;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+.tbody
+{
+	display:table-row-group;
+}
+.tr
+{
+	display:table-row;
+	
+}
+.td
+{
+	display:table-cell;
+	padding: 10px 1px 1px 5px;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='date']{
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  margin: 5px 1em 5px auto;;
+}
+
+
+th:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}

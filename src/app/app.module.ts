@@ -1,18 +1,22 @@
+import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { FormsModule }   from '@angular/forms';
+import { HttpClientModule }   from '@angular/common/http';
+import { AppComponent }   from './app.component';
+import { SearchPipe } from './pipes/search.pipe';
+import { SortDirective } from './directive/sort.directive';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
+  imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    HttpClientModule
+    ],
+  declarations: [ 
+    AppComponent,
+    SearchPipe,
+    SortDirective
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
